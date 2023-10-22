@@ -82,11 +82,6 @@ async def dodaj_smiec(ctx, przedmiot, material):
         await ctx.send(f'dodano do listy')
     else:
         await ctx.send('nie mam takiego materiału')
-damage_data = {
-    'plastik': 'Wysoka szkodliwość dla środowiska, nie ulega rozkładowi.',
-    'szklo': 'Niska szkodliwość, ulega rozkładowi w około 1 milion lat.',
-    'papier': 'Średnia szkodliwość, rozkłada się w około 2-5 miesięcy.',
-}
 @bot.command()
 async def szkodliwosc(ctx, przedmiot):
     if przedmiot in plastik:
